@@ -12,6 +12,7 @@ body {
   background-image: url(assets/VALCOtennis1jpg.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
  
 }
 
