@@ -1,118 +1,164 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&;');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
-  background-image: linear-gradient(
-    to right top,
-    #9abbf4,
-    #c8a2f1,
-    #fe81c6,
-    #ff697a,
-    #f97712
-  );
-  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 0, 0);
+text-align: center;
+ 
 }
 
-.hidden {
-  visibility: hidden;
-  position: absolute;
+h1, nav {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  /**width: 800px;**/
+  text-shadow: 1px 3px 10px #ff2424;
+  padding-bottom: 20px;
 }
 
-.output {
-  top: 0;
-}
-
-h2, .output {
-  margin: 8px 0;
-}
-
-.allPage {
-  min-height: 100vh;
+#teamgen-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
+  width: 800px;
+  margin-top: -20px;
 }
 
-.container {
-  background-image: linear-gradient(
-    to right top,
-    #f5b700,
-    #dc0073,
-    #ff697a,
-    #f97712
-  );
-  padding: 30px;
-  border-radius: 5px;
+#leftdiv {
+  margin-right:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  align-text: center;
+  width: 365px;
+  display: inline-block;
+  text-align: center;
 }
 
-#myInput {
-  font-size: 1.2em;
+h2 {
+  color: #ff9191;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-textarea, input {
-  margin-bottom: 10px;
-}
-
-input {
-  width: 100%;
-}
-
-#buttons {
-  width: 100%;
-  background-color: #f5f3ff;
-  padding: 5px;
-  border: none;
-  transition: 0.2s ease-in-out;
-}
-
-#buttons:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-.title {
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   color: white;
-  width: 100%;
-  font-size: 1.5em;
 }
 
-#reset {
-  width: 100%;
-  background-color: #f5f3ff;
-  padding: 5px;
-  border: none;
-  transition: 0.2s ease-in-out;
-}
-
-#reset:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-.teams {
-  background-image: linear-gradient(
-    to right top,
-    #f5b700,
-    #dc0073,
-    #ff697a,
-    #f97712
-  );
-  padding: 30px;
+textarea {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 15px;
+  display: block;.
+  height: 300px;
+  width: 365px;
+  margin-bottom: 15px;
+  outline: none;
+  box-sizing: border-box;
+  padding-left: 8px;
+  background-color: #3b3737;
   border-radius: 5px;
+  border-color: #212121;
   color: white;
-  font-size: 1.2em;
-  transition: all 0.5s ease-out;
+  resize: none;
+}
+
+p1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+#num-teams {
+  width: 50px;
+  border-width: 1px;
+  border-color: #212121;
+  border-style: solid;
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  margin-left: 2px;
+  padding-left: 1px;
+  padding-right: 3px;
+  padding-bottom: 2px;
+  text-align: center;
+  background-color: #383838;
+  color: white;
+  outline: none;
+}
+
+#generate {
+  background-color: #bd383a;
+  border-style: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: background-color, 300ms;
+}
+
+#generate:hover {
+  background-color: #770a0c; 
+}
+
+#teams-list {
+  text-align: center;
+}
+
+p2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+#teams {
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+  color: #ff4848;
 }
 
 p {
-  margin: 15px;
+  color: #ff4848;
+  background-color: #2b2a2a;
+  padding: 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 400px;
 }
 
-#myInput {
-  color: #111;
+.summary{
+  color: #ff4848;
+  background-color: #2b2a2a;
+  padding: 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
+  
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
