@@ -6,7 +6,7 @@
 
 body {
   background-color: rgb(0, 0, 0);
-text-align: center;
+  margin: auto;
  
 }
 
@@ -23,8 +23,8 @@ h1, nav {
 }
 
 #teamgen-wrapper {
-  display: flex;
-  width: 800px;
+  display: block;
+  width: 1000px;
   margin-top: -20px;
 }
 
