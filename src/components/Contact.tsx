@@ -8,6 +8,14 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
+const contactConfig = {
+  YOUR_EMAIL: "kwabenasapong@gmail.com",
+  description: "Feel free to reach out to me for collaborations or any inquiries. I'm always open to discussing new projects and opportunities.",
+  YOUR_SERVICE_ID: "kbs_portfolio",
+  YOUR_TEMPLATE_ID: "template_c5a7lp4",
+  YOUR_USER_ID: "9tc0kmbzKqJcuh5sJ",
+};
+
 const Contact = () => {
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
@@ -19,10 +27,10 @@ const Contact = () => {
 
     try {
       const result = await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        contactConfig.YOUR_SERVICE_ID,
+        contactConfig.YOUR_TEMPLATE_ID,
         formRef.current!,
-        'YOUR_PUBLIC_KEY'
+        contactConfig.YOUR_USER_ID
       );
 
       if (result.text === 'OK') {
@@ -38,6 +46,7 @@ const Contact = () => {
         description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
+      console.error("EmailJS Error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -56,6 +65,16 @@ const Contact = () => {
           Get in Touch
         </motion.h2>
 
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="text-center text-muted-foreground max-w-2xl mx-auto mb-12"
+        >
+          {contactConfig.description}
+        </motion.p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-6">
@@ -63,11 +82,11 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <a
-                  href="mailto:kwabenasapong@gmail.com"
+                  href={`mailto:${contactConfig.YOUR_EMAIL}`}
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="h-5 w-5" />
-                  kwabenasapong@gmail.com
+                  {contactConfig.YOUR_EMAIL}
                 </a>
                 <a
                   href="tel:+233548257283"
