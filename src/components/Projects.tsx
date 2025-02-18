@@ -2,32 +2,43 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
+  {
+    title: "Tournament Platform",
+    description: "Leading the development of a tournament platform integration for the Reign of Titans gaming website, featuring real-time gameplay tracking and competitive matchmaking.",
+    link: "https://titans.reignoftitans.org",
+    tech: ["React", "MongoDB", "Azure", "WebSockets", "JavaScript"],
+    isWebsite: true,
+  },
   {
     title: "SMS Alert System",
     description: "VSMSAlert System - An ASP.NET Core MVC application for sending SMS messages with Hubtel Quick SMS API integration.",
     link: "https://github.com/kwabenasapong/VALCOBulkSMSAlertSystem.git",
     tech: ["ASP.NET Core", "MVC", "API Integration"],
+    isWebsite: false,
   },
   {
     title: "AirBnB Clone",
     description: "A complete Airbnb clone with console interface, developed as part of the ALX SE programme.",
     link: "https://github.com/kwabenasapong/AirBnB_clone_v4.git",
     tech: ["Python", "Flask", "JavaScript"],
+    isWebsite: false,
   },
   {
     title: "Simple Shell",
     description: "A UNIX command interpreter implementation providing command line interface for OS interaction.",
     link: "https://github.com/kwabenasapong/simple_shell.git",
     tech: ["C", "Unix", "Shell Scripting"],
+    isWebsite: false,
   },
   {
     title: "Haul Road Scale Upgrade",
     description: "Advanced Automated Weighing and Record Auditing System for modernizing truck weighing processes.",
     link: "https://github.com/koby-deveer/scale_project/tree/connect",
     tech: ["Full Stack", "Database", "UI/UX"],
+    isWebsite: false,
   },
 ];
 
@@ -73,8 +84,12 @@ const Projects = () => {
                   className="w-full"
                   onClick={() => window.open(project.link, "_blank")}
                 >
-                  <Github className="mr-2 h-4 w-4" />
-                  View on GitHub
+                  {project.isWebsite ? (
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                  ) : (
+                    <Github className="mr-2 h-4 w-4" />
+                  )}
+                  {project.isWebsite ? "Visit Website" : "View on GitHub"}
                 </Button>
               </Card>
             </motion.div>
