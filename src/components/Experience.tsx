@@ -1,31 +1,37 @@
 
 import { motion } from "framer-motion";
-import { Card } from "./ui/card";
+import { Card } from "@/components/ui/card";
 
 const experiences = [
   {
-    title: "Team Lead / Lead Architect",
-    company: "MyDevConnect (Reign of Titans)",
-    period: "May 2024 - Present",
-    description: "Leading the integration of tournament platform, overseeing frontend and backend development.",
+    title: "Implementation & Architecture / Talent & Culture Manager",
+    company: "MyDevConnect Ltd. / PCXPay",
+    period: "May 2025 - Present",
+    description: "Architect and implement process improvements for web and software projects. Lead technical recruitment, onboarding, and skills assessment. Develop documentation and champion remote work best practices.",
   },
   {
-    title: "Area Manager - Electrical Engineering Section",
-    company: "Volta Aluminium Company Ltd.",
+    title: "Area Manager, Docks, Engineering & Maintenance Department",
+    company: "Volta Aluminium Company Ltd. (VALCO)",
     period: "Jan 2024 - Present",
-    description: "Leading dynamic team for success, driving operational excellence and fostering collaborative culture.",
+    description: "Deputise for department director, oversee engineering teams. Manage process improvement, technical troubleshooting, and incident response for complex systems.",
   },
   {
-    title: "Manager - Plant Electricals and Power Systems",
-    company: "Volta Aluminium Company Ltd.",
-    period: "Jan 2019 - Jan 2024",
-    description: "Managed plant power systems, electrical teams, and engineering operations.",
+    title: "CEO & Lead Consultant",
+    company: "Sapong Engineering",
+    period: "2024 - Present",
+    description: "Provide consulting services in software, electrical, and automation engineering. Deliver high-impact client solutions from software implementation to technical training.",
   },
   {
-    title: "Electrical Engineer",
+    title: "Team Lead, QA and System Architect",
+    company: "MyDevConnect Ltd.",
+    period: "May 2024 - April 2025",
+    description: "Oversaw integration and quality of Reign of Titans tournament platform. Coordinated frontend and backend teams, facilitated user acceptance testing.",
+  },
+  {
+    title: "Plant Electricals & Power Systems Manager",
     company: "Volta Aluminium Company Ltd.",
-    period: "Sep 2011 - Jan 2019",
-    description: "Provided engineering support for production and maintenance, executed system integration projects.",
+    period: "2019 - 2024",
+    description: "Managed plant power systems, electrical teams, and engineering operations with focus on safety and regulatory compliance.",
   },
 ];
 
