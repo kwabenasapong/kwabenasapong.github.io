@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl md:text-2xl text-secondary mb-8"
           >
-            Electrical Engineer | Full Stack Software Engineer
+            Technical Professional | Implementation & Architecture Manager
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -40,9 +40,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-white/70 max-w-2xl mb-12 text-lg"
           >
-            Passionate engineer with expertise in full-stack development, electrical
-            engineering, and team leadership. Building innovative solutions that make
-            a difference.
+            Resourceful and user-obsessed technical professional with 10+ years of experience bridging software engineering, customer enablement, and electrical systems. Passionate about building scalable support processes and empowering others through exceptional customer experiences.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
