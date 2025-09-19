@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card } from "./ui/card";
+import { Button } from "./ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
