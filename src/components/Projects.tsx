@@ -1,10 +1,24 @@
 
 import { motion } from "framer-motion";
-import { Card } from "./ui/card";
-import { Button } from "./ui/button";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
+  {
+    title: "Smart Interviewer Platform",
+    description: "An advanced LLM-powered interview preparation platform that generates customized questions and provides interactive learning experiences for job seekers across various roles and industries.",
+    link: "https://smart-interviewer-uat.replit.app",
+    tech: ["React", "Node.js", "PostgreSQL", "LLM", "Admin Console"],
+    isWebsite: true,
+  },
+  {
+    title: "ChurchConnect CMS",
+    description: "Comprehensive church management system (ERP for Churches) with member management, biblical tribe organization, attendance tracking, and AI-powered analytics.",
+    link: "https://www.churchconnectchms.com",
+    tech: ["Multi-tenant", "Role-based Access", "Analytics", "Email Tracking"],
+    isWebsite: true,
+  },
   {
     title: "Tournament Platform",
     description: "Leading the development of a tournament platform integration for the Reign of Titans gaming website, featuring real-time gameplay tracking and competitive matchmaking.",
@@ -13,31 +27,24 @@ const projects = [
     isWebsite: true,
   },
   {
-    title: "SMS Alert System",
-    description: "VSMSAlert System - An ASP.NET Core MVC application for sending SMS messages with Hubtel Quick SMS API integration.",
+    title: "SMS Alert System (VALCO)",
+    description: "Plant-wide ASP.NET Core MVC solution with Hubtel API for real-time incident notifications and automated messaging system.",
     link: "https://github.com/kwabenasapong/VALCOBulkSMSAlertSystem.git",
-    tech: ["ASP.NET Core", "MVC", "API Integration"],
-    isWebsite: false,
-  },
-  {
-    title: "AirBnB Clone",
-    description: "A complete Airbnb clone with console interface, developed as part of the ALX SE programme.",
-    link: "https://github.com/kwabenasapong/AirBnB_clone_v4.git",
-    tech: ["Python", "Flask", "JavaScript"],
-    isWebsite: false,
-  },
-  {
-    title: "Simple Shell",
-    description: "A UNIX command interpreter implementation providing command line interface for OS interaction.",
-    link: "https://github.com/kwabenasapong/simple_shell.git",
-    tech: ["C", "Unix", "Shell Scripting"],
+    tech: ["ASP.NET Core", "MVC", "Hubtel API", "Real-time Alerts"],
     isWebsite: false,
   },
   {
     title: "Haul Road Scale Upgrade",
-    description: "Advanced Automated Weighing and Record Auditing System for modernizing truck weighing processes.",
+    description: "Cross-disciplinary team project developing automated weighing and record auditing system with modern UI and comprehensive reporting.",
     link: "https://github.com/koby-deveer/scale_project/tree/connect",
-    tech: ["Full Stack", "Database", "UI/UX"],
+    tech: ["Python", "SQL", "React", "Automation", "Reporting"],
+    isWebsite: false,
+  },
+  {
+    title: "AirBnB Clone",
+    description: "A complete Airbnb clone with console interface, developed as part of the ALX SE programme demonstrating full-stack development skills.",
+    link: "https://github.com/kwabenasapong/AirBnB_clone_v4.git",
+    tech: ["Python", "Flask", "JavaScript", "Full Stack"],
     isWebsite: false,
   },
 ];
